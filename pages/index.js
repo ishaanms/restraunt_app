@@ -20,7 +20,7 @@ export default function Home({pizzaList}) {
   );
 }
 export const getServerSideProps= async()=>{
-  const res = await axios.get("/api/products");
+  const res = await axios.get("https://restraunt-app.vercel.app/api/products");
   return {
     props: {
       pizzaList: res.data,
