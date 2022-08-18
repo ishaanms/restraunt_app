@@ -44,7 +44,7 @@ const Add = ({ setClose }) => {
         img: url,
       };
 
-      await axios.post("/api/products", newProduct);
+      await axios.post("https://restraunt-app.vercel.app/api/products", newProduct);
       setClose(true);
     } catch (err) {
       console.log(err);
